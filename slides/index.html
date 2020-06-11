@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Adding Location Services to Your Jamstack</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background="img/map.jpg" data-background-opacity="0.2">
+					<h1>Adding Location Services to Your Jamstack</h1>
+				</section>
+
+				<section>
+					<h2>read.me</h2>
+					<ul>
+						<li>Raymond Camden</li>
+						<li>Lead Developer Evangelist for HERE</li>
+						<li>Enterprise Cat Demo Builder</li>
+						<li>Second best "Just Dance 2019" player (in my house)</li>
+						<li>Blogging at raymondcamden.com</li>
+						<li>Tweeting @raymondcamden</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Gameplan</h2>
+					<ul>
+					<li class="fragment">WTF's the Jamstack?!</li>
+					<li class="fragment">What's "Location Services"</li>
+					<li class="fragment">Demos, demos, and more demos</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>The Code</h2>
+					<p>
+					<a href="https://github.com/cfjedimaster/location-services-with-jamstack" target="_new">github.com/cfjedimaster/location-services-with-jamstack</a>
+					</p>
+				</section>
+
+				<section>
+					<h1>The Jamstack</h1>
+				</section>
+
+				<section>
+					<h2>Jamstack</h2>
+					<ul>
+					<li class="fragment">Yes, this is marketing</li>
+					<li class="fragment">"Static Web Sites"</li>
+					<li class="fragment">Much better than, "It's static but foo and goo and zoo...."</li>
+					</ul>
+				</section>
+
+				<section 
+				data-background-opacity="0.2"
+				data-background="img/letterj.jpg">
+				<h2>The JAM</h2>
+				<ul>
+				<li class="fragment">J is for JavaScript</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>JavaScript</h2>
+				<ul>
+				<li class="fragment">Adding interactivity to web pages</li>
+				<li class="fragment">Maybe it's a SPA</li>
+				<li class="fragment">Replacement for things we may have done on a server</li>
+				</ul>
+
+				<aside class="notes">
+				So for example, filtering and sorting a list of products
+				</aside>
+				</section>
+
+				<section 
+				data-background-opacity="0.2"
+				data-background="img/lettera.jpg">
+				<h2>The JAM</h2>
+				<ul>
+				<li>J is for JavaScript</li>
+				<li class="fragment">A is for APIs</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>APIs</h2>
+				<ul>
+				<li class="fragment">Any service that works on HTTP</li>
+				<li class="fragment">There's a <a href="https://github.com/public-apis/public-apis" target="_new">few of these</a></li>
+				<li class="fragment">Keep in mind keys and CORS issue</li>
+				</ul>
+
+				<aside class="notes">
+				</aside>
+				</section>
+
+				<section 
+				data-background-opacity="0.2"
+				data-background="img/letterm.jpg">
+				<h2>The JAM</h2>
+				<ul>
+				<li>J is for JavaScript</li>
+				<li>A is for APIs</li>
+				<li class="fragment">M is for Markup</li>
+				</ul>
+				</section>
+
+
+				
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

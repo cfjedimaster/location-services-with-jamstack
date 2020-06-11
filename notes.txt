@@ -1,0 +1,17 @@
+begin with what the jamstack is.
+
+describe what we mean by location services
+	maps - dynamic and static
+	routing - get to our locations
+	geocoding and search
+
+
+misc:
+	output JSON that can be used by mobile apps
+
+
+
+Image Credits:
+letterj, Photo by Zhen Hu on Unsplash
+lettera, Photo by Aneta Pawlik on Unsplash
+letterm, Photo by Egor Lyfar on Unsplash
