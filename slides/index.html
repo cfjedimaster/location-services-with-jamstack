@@ -208,8 +208,96 @@
 
 				<section data-background="img/11.jpg" data-background-opacity="0.2">
 					<h1>Eleventy</h1>
+					<p class="fragment"><i>in five minutes or so...</i></p>
 				</section>
 
+				<section>
+				<h2>Eleventy in a Nutshell</h2>
+				<ul>
+				<li class="fragment">Node-based</li>
+				<li class="fragment">Flexible as hell</li>
+				<li class="fragment">Currently version 0.11</li>
+				<li class="fragment"><a href="https://www.11ty.dev/" target="_new">https://www.11ty.dev</a></li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Install</h2>
+				<pre><code data-trim class="sh">
+				npm install -g @11ty/eleventy
+				</code></pre>
+				</section>
+
+				<section>
+				<h2>CLI usage</h2>
+				<pre><code data-trim class="sh">
+				eleventy #output to static
+				eleventy --serve #run a local dev server
+				</code></pre>
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+					<aside class="notes">
+					trash, just a md file, test eleventy and eleventy serve
+					</aside>
+				</section>
+
+				<section>
+				<h2>Simple Features</h2>
+				<ul>
+				<li class="fragment">Template Languages: Markdown, Nunjucks, Liquid, Handlebars, Mustache, EJS, HAML, Pug</li>
+				<li class="fragment">Layouts: Wrap your content with headers and footers</li>
+				<li class="fragment">Includes: Include stuff (duh)</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Template Language</h2>
+				<ul>
+				<li class="fragment">HTML plus code</li>
+				<li class="fragment">Hello, {name}</li>
+				<li class="fragment">{if cool} I'm cool! {endif}</li>
+				<li class="fragment">{for cat in cats} This cat's name is {cat}. {endfor}</li>
+				</ul>
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+					<aside class="notes">
+					show demo1 use of index.liquid, layout, blog posts in MD using front matter
+					</aside>
+				</section>
+
+				<section>
+				<h2>More Features</h2>
+				<ul>
+				<li class="fragment">Data</li>
+				<li class="fragment">Customized Short Code, Filters</li>
+				<li class="fragment">Pagination</li>
+				<li class="fragment">Plugins</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Data</h2>
+				<ul>
+				<li class="fragment">Data about your pages</li>
+				<li class="fragment">Custom Data</li>
+				</ul>
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+					<aside class="notes">
+					show demo 2, show index.liquid collections, show md file with tags, add a new blog post,
+					show cats.json, cats.liquid
+					</aside>
+				</section>
+
+				<section>
+					<h1>Congratulations</h1>
+				</section>
 			</div>
 		</div>
 

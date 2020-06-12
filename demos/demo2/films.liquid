@@ -1,0 +1,12 @@
+---
+layout: main
+title: Films
+---
+
+<h2>Films</h2>
+
+{% for film in films %}
+	<p>
+	{{ film.title }} was released on {{ film.release_date }}
+	</p>
+{% endfor %}

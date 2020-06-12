@@ -1,0 +1,12 @@
+---
+layout: main
+title: Cats
+---
+
+<h2>Cats</h2>
+
+{% for cat in cats %}
+	<p>
+	{{cat.name}} is {{cat.gender}} and {{cat.age}} years old.
+	</p>
+{% endfor %}
