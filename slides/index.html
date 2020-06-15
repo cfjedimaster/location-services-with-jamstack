@@ -404,6 +404,79 @@ var ui = H.ui.UI.createDefault(map, defaultLayers);
 				<h1>Demo</h1>
 				</section>
 
+				<section>
+				<h2>Adding Data, interactivity</h2>
+				<ul>
+				<li class="fragment">Markers</li>
+				<li class="fragment">Shapes</li>
+				<li class="fragment">Overlays</li>
+				<li class="fragment">Routing</li>
+				<li class="fragment">Event Handlers</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Markers</h2>
+				<pre><code class="language-javascript" data-trim>
+// default
+map.addObject(new H.map.Marker({lat:30.9087, lng:-92.1079}));
+
+// custom marker
+var icon = new H.map.Icon('park.png');
+map.addObject(new H.map.Marker({lat:30.9087, lng:-92.1079}, 
+	{ icon:icon }));
+				</code></pre>
+				</section>
+
+				<section>
+				<h1>Demo</h1>
+				<aside class="notes">
+				Eleventy demo3
+				</aside>
+				</section>
+
+				<section>
+				<h2>Static Maps</h2>
+				<ul>
+				<li class="fragment">Images only</li>
+				<li class="fragment"><a href="https://developer.here.com/documentation/map-image/dev_guide/topics/what-is.html" target="_new">Map Image API</a></li>
+				<li class="fragment">Still supports markers, routing objects, etc, but non-interactive</li>
+				<li class="fragment">Email, voice assistants, or just simpler needs.</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>"API"</h2>
+				<ul>
+				<li class="fragment">https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey={YOUR_API_KEY}</li>
+				<li class="fragment">Add crap</li>
+				<li class="fragment">That's it</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Me</h2>
+				<p>
+				<img src="https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey=c1LJuR0Bl2y02PefaQ2d8PvPnBKEN8KdhAOFYR_Bgmw&c=30.22,-92.02"><br/>
+				https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey=...&c=30.22,-92.02
+				</p>
+				</section>
+
+				<section>
+				<h2>Also Me</h2>
+				<p>
+				<img src="https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey=c1LJuR0Bl2y02PefaQ2d8PvPnBKEN8KdhAOFYR_Bgmw&ci=lafayette&zip=70508&i">
+				https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey=...&ci=lafayette&zip=70508&i
+				</p>
+				</section>
+
+				<section>
+				<h1>Demo</h1>
+				<aside class="notes">
+				Eleventy demo3
+				</aside>
+				</section>
+
 			</div>
 		</div>
 

@@ -1,0 +1,7 @@
+<h2>Parks</h2>
+
+<ul>
+{% for park in nationalparks.features %}
+	<li>{{ park.properties.Name }}</li>
+{% endfor %}
+</ul>

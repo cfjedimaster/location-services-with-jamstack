@@ -1,0 +1,20 @@
+---
+pagination: 
+    data: nationalparks.features
+    size: 50
+---
+
+<h2>All Parks</h2>
+
+<ul>
+{% for park in pagination.items %}
+    <li>{{ park.properties.Name }}</li>
+{% endfor %}
+</ul>
+
+<hr/>
+<a href="{{ pagination.href.first }}">First</a> / 
+{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %} /
+{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %} /
+<a href="{{ pagination.href.last }}">Last</a>
+</ul>

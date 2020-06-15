@@ -1,0 +1,21 @@
+---
+pagination: 
+    data: nationalparks.features
+    size: 20
+---
+
+<h2>All Parks</h2>
+
+<p>
+{% for park in pagination.items %}
+    <h2>{{ park.properties.Name }}</h2>
+	<img src="https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey={{ site.herekey}}&c={{park.geometry.coordinates[1]}},{{park.geometry.coordinates[0]}}">
+{% endfor %}
+</p>
+
+<hr/>
+<a href="{{ pagination.href.first }}">First</a> / 
+{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %} /
+{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %} /
+<a href="{{ pagination.href.last }}">Last</a>
+</ul>
