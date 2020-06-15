@@ -308,6 +308,15 @@
 				</section>
 
 				<section>
+				<h2>HERE Developers</h2>
+				<ul>
+				<li class="fragment">Sign up at <a href="https://developer.here.com/sign-up" target="_new">https://developer.here.com/sign-up</a></li>
+				<li class="fragment">Free tier (and paid tier) details: <a href="https://developer.here.com/pricing" target="_new">https://developer.here.com/pricing</a></li>
+				<li class="fragment">Docs, examples, etc at <a href="https://developer.here.com" target="_new">https://developer.here.com</a></li>
+				<li class="fragment">Generate your key (Ray, show this)</li>
+				</section>
+
+				<section>
 				<h2>Location Stuff!</h2>
 				<ul>
 				<li class="fragment">Maps</li>
@@ -315,6 +324,86 @@
 				<li class="fragment">Routing</li>
 				</ul>
 				</section>
+				
+				<section>
+				<h2>Maps</h2>
+				<ul>
+				<li class="fragment">Client-Side JavaScript-rendered Maps</li>
+				<li class="fragment">Static Image Only Maps</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Maps API for JavaScript</h2>
+				<ul>
+				<li class="fragment">Requires JavaScript</li>
+				<li class="fragment">Interactive Mapping</li>
+				<li class="fragment">Markers, Routing, Shapes, Overlays</li>
+				<li class="fragment">Geocoding, Traffic, Clustering</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>JS Maps Step by Step</h2>
+				<pre><code class="language-html" data-trim>
+	<script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript"></script>
+	<script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript"></script>
+	<script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js" type="text/javascript"></script>
+	<script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript"></script>
+	<link href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" rel="stylesheet" type="text/css" />
+				</code></pre>
+				</section>
+
+				<section>
+				<h2>JS Maps Step by Step</h2>
+				<pre><code class="language-html" data-trim>
+		<div id="mapContainer"></div>
+				</code></pre>
+				</section>
+
+				<section>
+				<h2>JS Maps Step by Step</h2>
+				<pre><code class="language-javascript" data-trim>
+		const KEY = 'c1LJuR0Bl2y02PefaQ2d8PvPnBKEN8KdhAOFYR_Bgmw';
+		var platform = new H.service.Platform({
+			'apikey': KEY
+		});
+				</code></pre>
+				</section>
+
+				<section>
+				<h2>JS Maps Step by Step</h2>
+				<pre><code class="language-javascript" data-trim>
+		// Obtain the default map types from the platform object:
+		var defaultLayers = platform.createDefaultLayers();
+
+		var map = new H.Map(
+			document.getElementById('mapContainer'),
+			defaultLayers.vector.normal.map,
+			{
+				zoom: 5,
+				center: { lat: 30.22, lng: -92.02 },
+				pixelRatio: window.devicePixelRatio || 1
+			}
+		);
+				</code></pre>
+				</section>
+
+				<section>
+				<h2>JS Maps Step by Step</h2>
+				<pre><code class="language-javascript" data-trim>
+// drag and drop, pinch to zoom, etc
+var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+// Create the default UI control:
+var ui = H.ui.UI.createDefault(map, defaultLayers);
+				</code></pre>
+				</section>
+
+				<section>
+				<h1>Demo</h1>
+				</section>
+
 			</div>
 		</div>
 
