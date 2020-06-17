@@ -505,7 +505,49 @@ map.addObject(new H.map.Marker({lat:30.9087, lng:-92.1079},
 				<aside class="notes">
 				Eleventy demo4
 				</aside>
-				</section>				
+				</section>		
+
+				<section>
+				<h2>Search</h2>
+				<ul>
+				<li class="fragment">Finding POIs (Points of Interest)</li>
+				<li class="fragment">Discover: Text search for stuff around a point</li>
+				<li class="fragment">Browse: Catergory search for stuff around a point</li>
+				<li class="fragment">"Around a point" - at a point, in a box, in a circle</li>
+				</ul>
+				</section>		
+
+				<section>
+				<h2>Discover API Example</h2>
+				<a href="https://discover.search.hereapi.com/v1/discover?at=30.20842%2C-91.99327&q=restaurant&apikey=c1LJuR0Bl2y02PefaQ2d8PvPnBKEN8KdhAOFYR_Bgmw" target="_new">
+				https://discover.search.hereapi.com/v1/discover?at=30.20842%2C-91.99327&q=restaurant&apikey={key}</a>
+				</section>
+
+				<section>
+				<h2>Browse API Example</h2>
+				<a href="https://browse.search.hereapi.com/v1/browse?at=30.20842%2C-91.99327&categories=300-3000-0025,300-3100,550-5510-0202,500-5520,600-6100-0062&apikey=c1LJuR0Bl2y02PefaQ2d8PvPnBKEN8KdhAOFYR_Bgmw" target="_new">
+				https://browse.search.hereapi.com/v1/browse?at=30.20842%2C-91.99327&categories=300-3000-0025,300-3100,550-5510-0202,500-5520,600-6100-0062&apikey={key}</a>
+				<aside class="notes">
+				historical monuments (300-3000-0025) and museums (300-3100)
+shopping malls (600-6100-0062)
+parks (550-5510-0202) and leisure places (500-5520)
+				</aside>
+				</section>
+
+				<section>
+				<h2>Categories</h2>
+				<ul>
+					<li class="fragment">Three levels of specificity</li>
+					<li class="fragment"><a href="https://developer.here.com/documentation/geocoding-search-api/dev_guide/topics-places/introduction.html" target="_new">Docs</a></li>
+				</ul>
+				</section>
+
+				<section>
+				<h1>Demo</h1>
+				<aside class="notes">
+				Eleventy demo5
+				</aside>
+				</section>		
 
 			</div>
 		</div>
