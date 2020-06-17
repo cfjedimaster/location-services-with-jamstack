@@ -10,9 +10,12 @@ misc:
 	output JSON that can be used by mobile apps
 
 
+https://developer.here.com/blog/integrating-geojson-in-your-static-sites
 
 Image Credits:
 letterj, Photo by Zhen Hu on Unsplash
 lettera, Photo by Aneta Pawlik on Unsplash
 letterm, Photo by Egor Lyfar on Unsplash
 11, Photo by Agê Barros on Unsplash
+
+

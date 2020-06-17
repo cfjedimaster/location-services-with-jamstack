@@ -1,0 +1,10 @@
+---
+layout: main
+title: My Cats!
+---
+
+{% for cat in cats %}
+	<p>
+	{{cat.name}} is {{cat.gender}} and {{cat.age}} years old. It is at {{ cat.position.lat }},{{ cat.position.lng }} 
+	</p>
+{% endfor %}
