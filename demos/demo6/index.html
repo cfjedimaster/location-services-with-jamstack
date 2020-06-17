@@ -1,0 +1,33 @@
+---
+layout: main
+title: Cats Are Awesome!
+---
+
+<h1>Cats are Awesome!</h1>
+
+<p>
+Come meet us at our store! 
+</p>
+
+
+{% raw %}
+<div id="app">
+	<div v-if="loading">
+		<i>PLEASE STAND BY - LOADING!</i>
+	</div>
+
+	<div v-if="route">
+		<p>
+		Your trip to our store will take {{ durationFormat(route.summary.duration) }} and cover {{ mileFormat(route.summary.length) }}.
+		</p>
+		<h2>Directions</h2>
+		<p v-for="action in route.actions">
+			{{ action.instruction }}
+		</p>
+	</div>
+	
+</div>
+{% endraw %}
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="js/app.js"></script>
