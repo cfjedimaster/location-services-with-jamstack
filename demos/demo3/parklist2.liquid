@@ -9,7 +9,7 @@ pagination:
 <p>
 {% for park in pagination.items %}
     <h2>{{ park.properties.Name }}</h2>
-	<img src="https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey={{ site.herekey}}&c={{park.geometry.coordinates[1]}},{{park.geometry.coordinates[0]}}">
+	<img src="https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey={{site.herekey}}&c={{park.geometry.coordinates[1]}},{{park.geometry.coordinates[0]}}">
 {% endfor %}
 </p>
 
